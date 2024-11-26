@@ -24,6 +24,23 @@ cd interpretation/data/labeled-motifs/generate_dataset/motif_gen
 python motifgen.py
 ```
 
+### Options
+- `--lambda_2`: hyper-parameter controlling the weights of interpretation $\mathcal{L}_{\text{2}}$ loss.
+- `--lambda_con`: hyper-parameter controlling the weights of cluster connectivity loss.
+- `--lambda_fea`: hyper-parameter controlling the weights of cluster feature loss.
+- `--lambda_proto`: hyper-parameter controlling the weights of cluster prototype loss.
+- `--clusters`: the predefined number of clusters for spectral graph clustering.
+- `--num_graph_filter`: the predefined number of graph filters for all classes in the dataset.
+- `--important_c`: select the top-c clusters as the important subgraphs.
+- `--result_folder`: the output folder.
+- `--dataset_name`: dataset_name (solubility/benzene/mutag/labeled-motifs).
+
+### Example
+```shell
+cd interpretation
+python main.py --dataset_name labeled-motifs
+```
+
 provide the code for generating the new synthetic dataset Labeled-Motifs. W
 
 a jupyter notebook with an example code that produces model-level explanations for the BA-house dataset.
