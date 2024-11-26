@@ -1,7 +1,7 @@
 # CIFlow-GNN
 ![image text](https://github.com/YJYTJ/CIFlow-GNN/blob/main/flowchart.jpeg "The pipeline of CIFlow-GNN")
-🔥
-**CIFlow-GNN**: "Enhancing Graph Learning Interpretability through Cluster Information Flow", Jiayi Yang, Wengang Guo, Xing Wei, Zexi Huang, and Wei Ye. This repository contains the official PyTorch implementation of our work.
+
+🔥**CIFlow-GNN**: "Enhancing Graph Learning Interpretability through Cluster Information Flow", Jiayi Yang, Wengang Guo, Xing Wei, Zexi Huang, and Wei Ye. This repository contains the official PyTorch implementation of our work.
 
 ## 🚀 About
 
@@ -55,8 +55,9 @@ pip install -r requirements.txt
 ```
 
 ### Datasets
-1. [Download](https://chrsmrrs.github.io/datasets/docs/datasets/) the datasets and place them in the ```./classification/datasets``` folder.
-2. For fair comparison, use the cross-validation splits strategy provided by [this repository](https://github.com/diningphil/gnn-comparison). Copy the data splits to ```./classification/data_split_dir```.
+-  [Download](https://chrsmrrs.github.io/datasets/docs/datasets/) the datasets and place them in the ```./classification/datasets``` folder.
+-  For fair comparison, use the cross-validation splits strategy provided by [this repository](https://github.com/diningphil/gnn-comparison). Copy the data splits to ```./classification/data_split_dir```.
+
 To quickly get started, we include the **MUTAG** dataset along with its data splits in our repository.
 
 ### Example
