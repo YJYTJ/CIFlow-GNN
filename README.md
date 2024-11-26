@@ -34,7 +34,7 @@ python data/labeled-motifs/generate_dataset/motifgen.py
 - `--lambda_fea`: Hyper-parameter for cluster feature loss.
 - `--lambda_proto`: Hyper-parameter for cluster prototype loss.
 - `--clusters`: Number of predefined clusters for spectral graph clustering.
-- `--num_graph_filter`: Number of graph filters for all classes in the dataset.
+- `--num_graph_filter`: Number of predefined graph filters for all classes in the dataset.
 - `--important_c`: Select the top-c clusters as important subgraphs.
 - `--result_folder`: Path to the output folder.
 - `--dataset_name`: Datasets for graph interpretation (solubility/benzene/Mutagenicity/labeled-motifs).
