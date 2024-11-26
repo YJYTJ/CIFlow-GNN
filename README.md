@@ -1,29 +1,34 @@
 # CIFlow-GNN
-![image text](https://github.com/YJYTJ/CIFlow-GNN/blob/main/flowchart.jpeg "DBSCAN Performance Comparison")
-
-🔥 This repository is the official PyTorch implementation of "Enhancing Graph Learning Interpretability through Cluster Information Flow", Jiayi Yang, Wengang Guo, Xing Wei, Zexi Huang, and Wei Ye.
-
-## Table of Contents
-
-- [About](#-about)
-- [Certification](#-certification)
-- [How to Build](#-how-to-build)
-- [Documentation](#-documentation)
-- [Feedback and Contributions](#-feedback-and-contributions)
-- [License](#-license)
-- [Contacts](#%EF%B8%8F-contacts)
+![image text](https://github.com/YJYTJ/CIFlow-GNN/blob/main/flowchart.jpeg "The pipeline of CIFlow-GNN")
+🔥
+This repository is the official PyTorch implementation of "Enhancing Graph Learning Interpretability through Cluster Information Flow", Jiayi Yang, Wengang Guo, Xing Wei, Zexi Huang, and Wei Ye.
 
 ## 🚀 About
 
-**Abblix OIDC Server** is a .NET library designed to provide comprehensive support for OAuth2 and OpenID Connect on the server side. It adheres to high standards of flexibility, reusability, and reliability, utilizing well-known software design patterns, including modular and hexagonal architectures. These patterns ensure the following benefits:
+**CIFlow-GNN** is an efficient subgraph-based built-in graph explainer that can provide explanations for graphs and the graph model simultaneously by modulating the information flow. We evaluate CIFlow-GNN in terms of both interpretation and prediction performance.  
 
-- **Modularity**: Different parts of the library can function independently, enhancing the library's modularity and allowing for easier maintenance and updates.
-- **Testability**: Improved separation of concerns makes the code more testable.
-- **Maintainability**: Clear structure and separation facilitate better management of the codebase.
 
-The library also supports Dependency Injection through the standard .NET DI container, aiding in the organization and management of code. Specifically tailored for seamless integration with ASP.NET WebApi, Abblix OIDC Server employs standard controller classes, binding, and routing mechanisms, simplifying the integration of OpenID Connect into your services.
 
-## 🎓 Certification
+## 🎓 graph interpretation
+### Requirements
+
+```shell
+cd interpretation
+pip install -r requirements.txt
+```
+
+### Datasets
+The repository contains the datasets for graph interpretation in the ./interpretation/data folder, including Labeled-Motifs, Mutagenicity, Solubility, and Benzene. Specifically, you can generate the new synthetic dataset Labeled-Motifs by taking the following steps.
+```shell
+cd interpretation/data/labeled-motifs/generate_dataset/motif_gen
+python motifgen.py
+```
+
+provide the code for generating the new synthetic dataset Labeled-Motifs. W
+
+a jupyter notebook with an example code that produces model-level explanations for the BA-house dataset.
+
+
 
 [![OpenID_Foundation_Certification](https://resources.abblix.com/imgs/svg/abblix-oidc-server-openid-foundation-certification-mark.svg)](https://openid.net/certification/#OPENID-OP-P)
 
