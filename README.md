@@ -24,8 +24,8 @@ The datasets for graph interpretation are available in the ```./interpretation/d
 
 To generate the new synthetic dataset (**Labeled-Motifs**) proposed by us, run the following:
 ```shell
-cd interpretation/data/labeled-motifs/generate_dataset/motif_gen
-python motifgen.py
+cd interpretation
+python data/labeled-motifs/generate_dataset/motifgen.py
 ```
 
 ### Options
