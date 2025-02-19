@@ -164,7 +164,7 @@ class CIFlow(nn.Module):
                     mean2 = mean_list[j2]
                     center_loss_i += torch.mean((mean1 - mean2)**2)
             center_loss += -center_loss_i
-            center_loss = center_loss/(n_clusters*(n_clusters-1)/2)
+            center_loss = center_loss/(n_clusters-1)
         
         return feature_loss + center_loss
     
