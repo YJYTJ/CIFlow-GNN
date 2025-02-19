@@ -5,7 +5,7 @@
 
 ## 🚀 About
 
-**CIFlow-GNN** is an efficient subgraph-based built-in graph explainer that simultaneously provides explanations for graphs and the graph model by modulating the information flow. The framework is designed to enhance both interpretability and prediction performance.
+**CIFlow-GNN** is an efficient subgraph-based built-in GNN explainer that provides explanations by modulating the cluster information flow. The framework is designed to enhance both graph interpretability and graph prediction performance.
 
 ## 🎓 graph interpretation
 ### Requirements
