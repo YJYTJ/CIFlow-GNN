@@ -1,5 +1,5 @@
 # CIFlow-GNN
-![image text](https://github.com/YJYTJ/CIFlow-GNN/blob/main/flowchart.jpg "The pipeline of CIFlow-GNN")
+![image text](https://github.com/YJYTJ/CIFlow-GNN/blob/main/flowchart.png "The pipeline of CIFlow-GNN")
 
 🔥**CIFlow-GNN**: "Enhancing Graph Learning Interpretability through Cluster Information Flow", Jiayi Yang, Wei Ye*, Xin Sun, Rui Fan, and Jungong Han. This repository contains the official PyTorch implementation of our work.
 
