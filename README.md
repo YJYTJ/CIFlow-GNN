@@ -54,9 +54,16 @@ We provide the source code to reproduce the results in our paper. To reproduce T
 
 ```shell
 cd interpretation
+# labeled-motifs
 python main.py --dataset_name labeled-motifs --lambda_2 0.3 --lambda_con 0.05 --lambda_fea 0.1 --lambda_proto 0.15 --layer_num 4 --clusters 2 --num_graph_filter 3 --epochs 100
+
+# mutagenicity
 python main.py --dataset_name mutagenicity --lambda_2 0.3 --lambda_con 0.01 --lambda_fea 0.1 --lambda_proto 0.05 --layer_num 4 --clusters 4 --num_graph_filter 6 --epochs 100
+
+# solubility
 python main.py --dataset_name solubility --lambda_2 1.0 --lambda_con 0.05 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 5 --clusters 4 --num_graph_filter 5 --epochs 100
+
+# benzene
 python main.py --dataset_name benzene --lambda_2 0.5 --lambda_con 0.1 --lambda_fea 0.3 --lambda_proto 0.1 --layer_num 4 --clusters 3 --num_graph_filter 5 --epochs 100
 ```
 
