@@ -54,6 +54,7 @@ We provide the source code to reproduce the results in our paper. To reproduce T
 
 ```shell
 cd interpretation
+
 # labeled-motifs
 python main.py --dataset_name labeled-motifs --lambda_2 0.3 --lambda_con 0.05 --lambda_fea 0.1 --lambda_proto 0.15 --layer_num 4 --clusters 2 --num_graph_filter 3 --epochs 100
 
@@ -86,15 +87,35 @@ We provide the source code to reproduce the results in our paper. To reproduce T
 
 ```shell
 cd classification
+
+# MUTAG
 python main.py --dataset_name MUTAG --latent_dim1 32 --latent_dim2 256 --lambda_2 0.5 --lambda_con 0.01 --lambda_fea 0.05 --lambda_proto 0.05 --layer_num 5 --clusters 2 --num_graph_filter 4 --epochs 350 --use_node_labels
+
+# BZR
 python main.py --dataset_name BZR --latent_dim1 32 --latent_dim2 256 --lambda_2 0.3 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 3 --clusters 3 --num_graph_filter 3 --epochs 350 --use_node_labels
+
+# BZR_MD
 python main.py --dataset_name BZR_MD --latent_dim1 32 --latent_dim2 32 --lambda_2 0.5 --lambda_con 0.01 --lambda_fea 0.05 --lambda_proto 0.05 --layer_num 5 --clusters 2 --num_graph_filter 3 --epochs 350 --use_node_labels
+
+# DHFR
 python main.py --dataset_name DHFR --latent_dim1 32 --latent_dim2 128 --lambda_2 0.1 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 3 --clusters 2 --num_graph_filter 3 --epochs 350 --use_node_labels
+
+# COX2
 python main.py --dataset_name COX2 --latent_dim1 32 --latent_dim2 128 --lambda_2 0.3 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 4 --clusters 3 --num_graph_filter 3 --epochs 350 --use_node_labels
+
+# PROTEINS
 python main.py --dataset_name PROTEINS --latent_dim1 32 --latent_dim2 32 --lambda_2 0.1 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 3 --clusters 2 --num_graph_filter 3 --epochs 350 --use_node_labels
+
+# NCI1
 python main.py --dataset_name NCI1 --latent_dim1 32 --latent_dim2 32 --lambda_2 0.1 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 3 --clusters 2 --num_graph_filter 4 --epochs 350 --use_node_labels
+
+# DD
 python main.py --dataset_name DD --latent_dim1 32 --latent_dim2 32 --lambda_2 0.3 --lambda_con 0.05 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 6 --clusters 3 --num_graph_filter 4 --epochs 350 --use_node_labels
+
+# IMDB-BINARY
 python main.py --dataset_name IMDB-BINARY --latent_dim1 32 --latent_dim2 32 --lambda_2 0.1 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 4 --clusters 3 --num_graph_filter 5 --epochs 350
+
+# IMDB-MULTI
 python main.py --dataset_name IMDB-MULTI --latent_dim1 32 --latent_dim2 64 --lambda_2 0.1 --lambda_con 0.01 --lambda_fea 0.01 --lambda_proto 0.05 --layer_num 4 --clusters 2 --num_graph_filter 4 --epochs 350
 ```
 
