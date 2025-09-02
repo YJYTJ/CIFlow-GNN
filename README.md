@@ -28,6 +28,8 @@ cd interpretation
 python data/labeled-motifs/generate_dataset/motifgen.py
 ```
 
+The details of four datasets are provided in ```./interpretation/dataset_description.md```.
+
 ### Options
 - `--lambda_2`: Hyper-parameter for interpretation $\mathcal{L}_{\text{2}}$ loss.
 - `--lambda_con`: Hyper-parameter for cluster connectivity loss.
@@ -61,7 +63,7 @@ pip install -r requirements.txt
 ```
 
 ### Datasets
--  We provide all ten datasets in the ```./classification/datasets.zip```. Unzip the ```./classification/datasets.zip``` and place it in the ```./classification/datasets``` folder. The datasets for graph classification task including: MUTAG, BZR, BZR_MD, DHFR, COX2, PROTEINS, NCI1, DD, IMDB-BINARY, and IMDB-MULTI.
+-  We provide all ten datasets in the ```./classification/datasets.zip```. Unzip the ```./classification/datasets.zip``` and place it in the ```./classification/datasets``` folder. The datasets used for the graph classification task are MUTAG, BZR, BZR_MD, DHFR, COX2, PROTEINS, NCI1, DD, IMDB-BINARY, and IMDB-MULTI.
 -  For fair comparison, we use the cross-validation splits strategy provided by [this repository](https://github.com/diningphil/gnn-comparison). Data splits for all ten datasets are provided in ```./classification/data_split_dir.zip```. Unzip the ```./classification/data_split_dir.zip``` and place it in the ```./classification/data_split_dir``` folder.
 
 
